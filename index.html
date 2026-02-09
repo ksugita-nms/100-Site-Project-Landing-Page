@@ -94,10 +94,32 @@
 </div>
 </section>
 
-<!-- ===== CTA BAR ===== -->
+<!-- ===== CTA BAR / お問い合わせボタン ===== -->
 <div class="fixed bottom-0 w-full bg-orange-500 text-white py-4 text-center font-bold shadow-lg z-50">
-  <a href="#contact" class="hover:underline">お問い合わせはこちら →</a>
+  <button 
+    onclick="openGmail()" 
+    class="px-6 py-3 rounded-lg font-bold hover:bg-orange-600 transition"
+  >
+    お問い合わせはこちら →
+  </button>
 </div>
+
+<script>
+function openGmail() {
+  const email = "nmsbranding.group@nms.ac.jp"; // ここに受信先メールアドレスを入力
+  const subject = encodeURIComponent("お問い合わせ（100 Site Project）");
+  const body = encodeURIComponent(
+    "以下の情報をご記入の上、送信してください。\n\n" +
+    "お名前：\n" +
+    "所属：\n" +
+    "問い合わせ内容：\n"
+  );
+
+  const gmailUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+  window.open(gmailUrl, "_blank");
+}
+</script>
+
 
 <!-- ===== PROJECTS SECTION ===== -->
 <section id="projects" class="py-24 bg-white border-b border-gray-200">
@@ -202,7 +224,7 @@
       </div>
 
       <div class="p-6 bg-white rounded-xl shadow-md">
-        <div class="text-3xl font-bold text-orange-500 mb-2">製薬企業と治験開始前に連携</div>
+        <div class="text-3xl font-bold text-orange-500 mb-2">Next Step</div>
         <div class="text-sm text-gray-500">QMS・CTQテーマ</div>
       </div>
 
