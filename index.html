@@ -1,0 +1,278 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>プロジェクトページ</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  /* ヘッダー固定＆スクロールで色変化 */
+  #header {
+    transition: background-color 0.3s;
+  }
+  #header.scrolled {
+    background-color: #f97316; /* brand-orange */
+  }
+</style>
+</head>
+<body class="bg-gray-50 relative">
+
+<!-- ===== HEADER ===== -->
+<header id="header" class="fixed w-full top-0 left-0 z-50 bg-white shadow-md">
+  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold text-gray-900">Our Projects</h1>
+    <nav>
+      <ul class="flex gap-6">
+        <li><a href="#projects" class="text-gray-700 hover:text-orange-500">Projects</a></li>
+        <li><a href="#stats" class="text-gray-700 hover:text-orange-500">Stats</a></li>
+        <li><a href="#contact" class="text-gray-700 hover:text-orange-500">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="pt-24"></div> <!-- ヘッダー分の余白 -->
+
+<!-- ===== HERO SECTION ===== -->
+<div class="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-gray-900">
+    <img src="./main_visual_final2.png" alt="あなたの悩みを、あしたの知恵に。" class="absolute inset-0 w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/30 to-black/70"></div>
+    <div class="relative z-10 h-full flex items-center">
+        <div class="container mx-auto px-6">
+            <p class="text-orange-500 font-bold tracking-widest mb-4">100 SITE PROJECT</p>
+            <h1 class="text-white text-3xl md:text-5xl font-bold leading-tight mb-6">
+                あなたの悩みを、<br class="md:hidden"><span class="text-orange-500">あしたの知恵</span>に。
+            </h1>
+            <p class="text-gray-200 text-base md:text-lg max-w-2xl">
+                きれいな言葉ではない。<br class="md:hidden">
+                しかし、現場に根ざした確かな解決策を。<br>
+                医療現場の声から生まれる、実践型プロジェクト。
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- ===== MISSION SECTION ===== -->
+<section id="mission" class="py-20 bg-white border-b border-gray-200">
+<div class="container mx-auto px-6 max-w-4xl text-center">
+<h2 class="text-3xl font-bold mb-8 text-gray-800">
+    「変革」の波の中で、<br class="md:hidden">本当は困っていませんか？
+</h2>
+<p class="text-lg text-gray-600 mb-10 leading-relaxed text-left md:text-center">
+    治験エコシステム、DCT、GCP改正…。意義はわかっていても、実務にどう落とし込めばいいのか。<br>
+    コストやリソースはどう確保するのか。<br><br>
+    S-IRB化やCTQ要因の検討など、業界全体の動きの中で、現場のスタッフだけが取り残されていませんか？<br>
+    <strong>「100 Site Project」</strong>は、そんな<span class="text-orange-500 font-bold">「現場の本音（Voice of the Field）」</span>を話し、<br>
+    解決するための場所です。
+</p>
+</div>
+</section>
+
+<!-- ===== TEAM SECTION ===== -->
+<section class="py-20 bg-gray-50 border-b border-gray-200">
+<div class="container mx-auto px-6">
+<div class="text-center mb-16">
+    <span class="text-blue-500 font-bold tracking-widest uppercase text-sm">Team Solution</span>
+    <h2 class="text-3xl md:text-4xl font-bold mt-2 text-gray-900">1つのチームとして、解決策をつくる。</h2>
+</div>
+<div class="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto">
+    <div class="bg-white p-10 rounded-2xl shadow-md border-t-4 border-blue-500 hover:shadow-lg transition">
+        <div class="text-4xl text-blue-500 mb-4">01</div>
+        <h3 class="text-2xl font-bold mb-4">実務ノウハウの共有</h3>
+        <p class="text-gray-600">
+            成功事例も失敗事例も共有し、無駄な苦労を減らします。他施設の知恵が、あなたの現場を救います。
+        </p>
+    </div>
+    <div class="bg-white p-10 rounded-2xl shadow-md border-t-4 border-orange-500 hover:shadow-lg transition">
+        <div class="text-4xl text-orange-500 mb-4">02</div>
+        <h3 class="text-2xl font-bold mb-4">スケールメリットの活用</h3>
+        <p class="text-gray-600">
+            1人のスタッフ、1つの医療機関では難しいことも、連携することでパワーを持つことができます。システム導入や治験環境改善に前向きに取り組めます。
+        </p>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- ===== CTA BAR ===== -->
+<div class="fixed bottom-0 w-full bg-orange-500 text-white py-4 text-center font-bold shadow-lg z-50">
+  <a href="#contact" class="hover:underline">お問い合わせはこちら →</a>
+</div>
+
+<!-- ===== PROJECTS SECTION ===== -->
+<section id="projects" class="py-24 bg-white border-b border-gray-200">
+  <div class="container mx-auto px-6 max-w-6xl">
+    <div class="text-center mb-20">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">進行中のプロジェクト</h2>
+      <p class="mt-4 text-gray-500">現場から生まれた、実践的なソリューション。</p>
+    </div>
+
+    <!-- PROJECT 01: 症例集積 -->
+    <div class="flex flex-col md:flex-row gap-10 items-center mb-16 bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+      <div class="md:w-1/2">
+        <div class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded text-xs font-bold mb-2">PROJECT 01</div>
+        <h3 class="text-3xl font-bold mb-4 text-gray-900 cursor-pointer" onclick="openModal('rm')">
+          症例集積向上の取り組み<br>
+          <span class="text-lg font-normal text-gray-500">症例集積の壁を越える</span>
+        </h3>
+        <p class="text-gray-600 mb-4">リクルートマネージャー設置とネットワーク構築の実装フローを共有します。</p>
+        <button onclick="openModal('rm')" class="inline-flex items-center gap-2 text-white bg-blue-500 px-5 py-2 rounded-lg hover:bg-blue-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v.01M8 16h8M4 12h16M4 8h16" />
+          </svg>
+          資料を見る
+        </button>
+      </div>
+    </div>
+
+    <!-- PROJECT 02: FMV -->
+    <div class="flex flex-col md:flex-row-reverse gap-10 items-center mb-16 bg-gray-50 p-8 rounded-xl shadow-md border border-gray-200">
+      <div class="md:w-1/2">
+        <div class="inline-block bg-gray-200 text-gray-700 px-3 py-1 rounded text-xs font-bold mb-2">PROJECT 02</div>
+        <h3 class="text-3xl font-bold mb-4 text-gray-900 cursor-pointer" onclick="openModal('fmv')">
+          FMV導入の試み<br>
+          <span class="text-lg font-normal text-gray-500">適正な対価の追求</span>
+        </h3>
+        <p class="text-gray-600 mb-4">国内トップクラスの導入実績に基づく、FMV算定ロジックと交渉ノウハウを展開します。</p>
+        <button onclick="openModal('fmv')" class="inline-flex items-center gap-2 text-white bg-blue-500 px-5 py-2 rounded-lg hover:bg-blue-600 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 12v.01M8 16h8M4 12h16M4 8h16" />
+          </svg>
+          資料を見る
+        </button>
+      </div>
+    </div>
+
+    <!-- PROJECT 03: QMS -->
+    <div class="qms-highlight p-10 md:p-14 rounded-3xl shadow-xl relative overflow-hidden transform md:-mx-10 mb-16 bg-white border border-gray-200">
+      <div class="absolute top-0 right-0 bg-orange-500 text-white text-xs font-bold px-4 py-2 rounded-bl-lg z-10">NEW / FOCUS</div>
+      <div class="relative z-10 grid md:grid-cols-5 gap-10 items-center">
+        <div class="md:col-span-3">
+          <div class="inline-block bg-orange-100 text-orange-800 px-3 py-1 rounded text-xs font-bold mb-3 border border-orange-200">PROJECT 03</div>
+          <h3 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Advanced QMS Project<br>
+            <span class="text-xl font-normal text-gray-600">真の品質を求めて</span>
+          </h3>
+          <p class="text-gray-700 mb-6 leading-relaxed">
+            オーバークオリティによる現場疲弊と、本質的なデータの見極めという課題に挑みます。<br>
+            <strong>キッセイ薬品工業様</strong>と連携し、実際の治験（2試験）にてワーキンググループを発足。
+          </p>
+          <a href="#contact" class="inline-flex items-center text-orange-500 font-bold hover:underline">
+            ワーキンググループの詳細を聞く
+            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+            </svg>
+          </a>
+        </div>
+        <div class="md:col-span-2 flex justify-center">
+          <div class="w-40 h-40 bg-white rounded-full flex items-center justify-center shadow-inner border-4 border-orange-100">
+            <svg class="w-20 h-20 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== STATS SECTION (調整版) ===== --> 
+<section id="stats" class="py-20 bg-gray-900 border-t border-gray-200 text-white">
+  <div class="container mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold mb-12">既に動き出している「連携」の輪</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div class="p-6 bg-white rounded-xl shadow-md">
+        <div class="text-5xl font-bold text-orange-500 mb-2">40+</div>
+        <div class="text-sm text-gray-500">参加医療機関</div>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-md">
+        <div class="text-2xl md:text-3xl font-bold text-orange-500 mb-2 leading-tight">
+          ステークホルダーの参加
+        </div>
+        <div class="text-sm text-gray-500">製薬団体・SMO・サービスプロバイダー etc</div>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-md">
+        <div class="text-2xl md:text-3xl font-bold text-orange-500 mb-2 leading-tight">
+          意見交換会の開催
+        </div>
+        <div class="text-sm text-gray-500">FMVやS-IRBについて</div>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-md">
+        <div class="text-3xl font-bold text-orange-500 mb-2">製薬企業と治験開始前に連携</div>
+        <div class="text-sm text-gray-500">QMS・CTQテーマ</div>
+      </div>
+
+    </div>
+    <p class="mt-12 text-gray-300 text-sm">
+      臨床試験学会・臨床薬理学会・CRCのあり方会議等でブース展示中
+    </p>
+  </div>
+</section>
+
+<!-- ===== MODAL SECTION ===== -->
+<div id="modal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-xl w-11/12 md:w-3/4 lg:w-2/3 p-6 relative">
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 font-bold">✕</button>
+    
+    <div id="modal-tabs" class="flex gap-4 border-b mb-4"></div>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<script>
+  // ===== SCROLL HEADER COLOR =====
+  window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if(window.scrollY > 50) header.classList.add('scrolled');
+    else header.classList.remove('scrolled');
+  });
+
+  // ===== PDF DATA =====
+  const pdfData = {
+    rm: [
+      {title: "RMについて", url: "https://drive.google.com/file/d/1gsG0dA1ZyJEG4rMac_-l1gwFymlOzbaY/preview"}
+    ],
+    fmv: [
+      {title: "FMVとは", url: "https://drive.google.com/file/d/1vEDBhkJK3gbLIwLlofHA95zosIOb269q/preview"},
+      {title: "FMV導入に向けて①", url: "https://drive.google.com/file/d/1IeTuhPDIfhrhQEtjgi7tu04YrRjE4BNV/preview"},
+      {title: "FMV導入に向けて②", url: "https://drive.google.com/file/d/1ryy0K8j0SV4JZtRoxPCBKLqFWoN-33Y0/preview"}
+    ]
+  };
+
+  // ===== MODAL OPEN / CLOSE =====
+  function openModal(type) {
+    const modal = document.getElementById("modal");
+    const tabs = document.getElementById("modal-tabs");
+    const content = document.getElementById("modal-content");
+    tabs.innerHTML = "";
+    content.innerHTML = "";
+
+    pdfData[type].forEach((pdf, idx) => {
+      const tab = document.createElement("button");
+      tab.textContent = pdf.title;
+      tab.className = "px-4 py-2 border-b-2 border-transparent hover:border-orange-500 focus:border-orange-500";
+      tab.onclick = () => {
+        content.innerHTML = `<iframe src="${pdf.url}" class="w-full h-[600px]"></iframe>`;
+      };
+      tabs.appendChild(tab);
+
+      if(idx === 0) tab.click();
+    });
+
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  }
+
+  function closeModal() {
+    const modal = document.getElementById("modal");
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  }
+</script>
+
+</body>
+</html>
