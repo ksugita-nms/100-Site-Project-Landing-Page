@@ -11,7 +11,7 @@
     transition: background-color 0.3s, box-shadow 0.3s;
   }
   #header.scrolled {
-    background-color: rgba(255, 255, 255, 0.95); /* 少し透過させる */
+    background-color: rgba(234, 88, 12, 0.95); /* オレンジ色 (orange-600) */
     backdrop-filter: blur(5px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   }
@@ -24,12 +24,13 @@
 
 <header id="header" class="fixed w-full top-0 left-0 z-50 bg-white/0">
   <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-gray-900 tracking-tight">100 Site Project</h1>
+    <img src="100 Site logo.png" alt="100 Site Project Logo" class="h-10 w-auto object-contain"> 
+    
     <nav>
       <ul class="flex gap-4 md:gap-6 text-sm md:text-base font-medium">
-        <li><a href="#projects" class="text-gray-700 hover:text-orange-500 transition">Projects</a></li>
-        <li><a href="#stats" class="text-gray-700 hover:text-orange-500 transition">Stats</a></li>
-        <li><a href="#contact" class="text-gray-700 hover:text-orange-500 transition">Contact</a></li>
+        <li><a href="#projects" class="text-white hover:text-orange-200 transition">Projects</a></li>
+        <li><a href="#stats" class="text-white hover:text-orange-200 transition">Stats</a></li>
+        <li><a href="#contact" class="text-white hover:text-orange-200 transition">Contact</a></li>
       </ul>
     </nav>
   </div>
